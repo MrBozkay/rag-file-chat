@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+google-generativeai
+python-multipart
+python-dotenv
+sqlalchemy
+pydantic-settings
+python-magic
+aiosqlite
+pytest
+pytest-asyncio
+pytest-cov
+httpx
