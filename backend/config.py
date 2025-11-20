@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     """Application configuration settings."""
     
     # API Keys
-    google_api_key: str
+    gemini_api_key: str
     
     # Database
     database_url: str = "sqlite:///./rag_chat.db"
@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     class Config:
         env_file = ".env"
         case_sensitive = False
+        extra = "ignore"
     
     @property
     def allowed_file_types_list(self) -> List[str]:
@@ -37,3 +38,4 @@ class Settings(BaseSettings):
 
 
 settings = Settings()
+
